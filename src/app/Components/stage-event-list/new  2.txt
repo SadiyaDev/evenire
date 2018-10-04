@@ -1,0 +1,44 @@
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+<html>
+  <head>
+
+  </head>
+  <body>
+  
+    <h2>Employee Details</h2>
+    <table>
+      <tr>
+            <th>Likes</th>
+            <th>Dislikes</th>
+            
+      
+          </tr>
+      
+          <tr *ngFor="let like of eventObj.likes;let dislike of eventObj.dislikes" >
+    
+
+      <td>{{like}}</td>
+      <td>{{dislike}}</td>
+      
+    
+    </tr>
+
+  </table>
+  
+  </body>
+  </html>
+  
